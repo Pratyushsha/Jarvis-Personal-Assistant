@@ -96,19 +96,19 @@ if __name__ == "__main__":
             speak(f"Sir, the time is {strTime}")
 
         elif 'open code' in query:
-            codePath = "/Users/pratyushsharma/Documents/main projects/jarvis.py"
+            codePath = "/Documents/main projects/jarvis.py"
             os.system("code " + codePath)
 
         elif 'email' in query:
             try:
                 speak("What should I say?")
                 content = takeCommand()
-                to = "ironfist2710@gmail.com"
+                to = "your@gmail.com"
                 sendEmail(to, content)
                 speak("Email has been sent!")
             except Exception as e:
                 print(e)
-                speak("Sorry my friend Pratyush bhai. I am not able to send this email")
+                speak("Sorry my friend  bhai. I am not able to send this email")
         elif 'news' in query:
             webbrowser.open("https://www.hindustantimes.com")
             speak("here are some interesting headlines")
@@ -119,7 +119,7 @@ if __name__ == "__main__":
         elif 'Alexa' in query:
             speak("Not exactly. but i offer no resistance to helpfull assistants")
         elif 'today is my birthday' in query:
-            speak("Happy Birthday Naresh")
+            speak("Happy Birthday ")
         elif 'stop' in query:
             speak("Bye Bye")
             break
